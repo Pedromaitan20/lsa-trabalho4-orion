@@ -3,7 +3,7 @@
   "hostname_vm": "lsa-rm574960",
   "integrantes": [
     { "nome": "Pedro Maitan de Moraes",             "rm": "574960", "github": "Pedromaitan20", "funcao": "Coordenador" },
-    { "nome": "André Gomes Uchôa",                  "rm": "574396", "github": "PREENCHER", "funcao": "Administrador de permissões" },
+    { "nome": "André Gomes Uchôa",                  "rm": "574396", "github": "AnDregomes789", "funcao": "Administrador de permissões" },
     { "nome": "Pedro Henrique Sá de Maria",         "rm": "559337", "github": "pedrohsec", "funcao": "Analista de testes" },
     { "nome": "Thiago Carvalho da Silveira Abbade", "rm": "575722", "github": "charlesproxy", "funcao": "Responsável pelo boot e Sabotador" }
   ]

@@ -1,5 +1,5 @@
 {
-  "nome_grupo": "PREENCHER-NOME-DO-GRUPO",
+  "nome_grupo": "Amigos",
   "hostname_vm": "lsa-rm574960",
   "integrantes": [
     { "nome": "Pedro Maitan de Moraes",             "rm": "574960", "github": "PREENCHER", "funcao": "Coordenador" },

@@ -1,0 +1,33 @@
+Inventário de arquivos com SUID (4000) ou SGID (2000) - lsa-rm574960 - 2026-11-03 09:54:31
+Comando: find / -xdev -type f \( -perm -4000 -o -perm -2000 \) -exec ls -l {} +
+
+== SUID ==
+-rwsr-xr-x 1 root root        70888 abr 19  2025 /usr/bin/chfn
+-rwsr-xr-x 1 root root        52936 abr 19  2025 /usr/bin/chsh
+-rwsr-xr-x 1 root root        39224 jul 16  2025 /usr/bin/fusermount3
+-rwsr-xr-x 1 root root        88568 abr 19  2025 /usr/bin/gpasswd
+-rwsr-xr-x 1 root root        72072 jul 31 12:34 /usr/bin/mount
+-rwsr-xr-x 1 root root        18816 jul 31 12:34 /usr/bin/newgrp
+-rwsr-xr-x 1 root root       166848 out  1 18:06 /usr/bin/ntfs-3g
+-rwsr-xr-x 1 root root       118168 abr 19  2025 /usr/bin/passwd
+-rwsr-xr-x 1 root root        30952 jan 17  2025 /usr/bin/pkexec
+-rwsr-xr-x 1 root root        84360 jul 31 12:34 /usr/bin/su
+-rwsr-xr-x 1 root root       306456 abr 11  2026 /usr/bin/sudo
+-rwsr-xr-x 1 root root        55688 jul 31 12:34 /usr/bin/umount
+-rwsr-xr-- 1 root messagebus  51272 mar  8  2025 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root       498240 mai  6 09:33 /usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root        18744 jan 17  2025 /usr/lib/polkit-1/polkit-agent-helper-1
+-rwsr-sr-x 1 root root        14672 set  5 02:52 /usr/lib/xorg/Xorg.wrap
+-rwsr-xr-- 1 root dip        428424 fev 17  2025 /usr/sbin/pppd
+
+== SGID ==
+-rwxr-sr-x 1 root shadow  113848 abr 19  2025 /usr/bin/chage
+-rwxr-sr-x 1 root crontab  51936 jun 13  2025 /usr/bin/crontab
+-rwxr-sr-x 1 root mail     23104 dez 31  2024 /usr/bin/dotlockfile
+-rwxr-sr-x 1 root shadow   31256 abr 19  2025 /usr/bin/expiry
+-rwxr-sr-x 1 root _ssh    420224 mai  6 09:33 /usr/bin/ssh-agent
+-rwxr-sr-x 1 root utmp     14416 nov 12  2024 /usr/lib/x86_64-linux-gnu/utempter/utempter
+-rwsr-sr-x 1 root root     14672 set  5 02:52 /usr/lib/xorg/Xorg.wrap
+-rwxr-sr-x 1 root shadow   43256 jun 29  2025 /usr/sbin/unix_chkpwd
+
+== Demonstração (cópia /usr/local/bin/cat-suid criada, usada e REMOVIDA em 2026-11-03 09:54:44) ==

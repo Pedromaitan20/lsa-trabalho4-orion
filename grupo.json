@@ -1,0 +1,10 @@
+{
+  "nome_grupo": "PREENCHER-NOME-DO-GRUPO",
+  "hostname_vm": "lsa-rm574960",
+  "integrantes": [
+    { "nome": "Pedro Maitan de Moraes",             "rm": "574960", "github": "PREENCHER", "funcao": "Coordenador" },
+    { "nome": "André Gomes Uchôa",                  "rm": "574396", "github": "PREENCHER", "funcao": "Administrador de permissões" },
+    { "nome": "Pedro Henrique Sá de Maria",         "rm": "559337", "github": "PREENCHER", "funcao": "Analista de testes" },
+    { "nome": "Thiago Carvalho da Silveira Abbade", "rm": "575722", "github": "PREENCHER", "funcao": "Responsável pelo boot e Sabotador" }
+  ]
+}

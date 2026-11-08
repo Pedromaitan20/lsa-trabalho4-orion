@@ -1,0 +1,105 @@
+Gerado em 2026-11-03 09:54:30 no host lsa-rm574960
+O sinal + no fim das permissões indica que o item tem ACL (ver P09).
+
+[drwxr-xr-x root     root    ]  /srv/arquivos
+├── [drwxrws--- root     bkpadm  ]  /srv/arquivos/backup
+├── [drwxr-s--- root     orion   ]  /srv/arquivos/empresa
+│   ├── [drwxrws--- root     soc     ]  /srv/arquivos/empresa/comunicados
+│   │   └── [-rw-rw---- asouza   soc     ]  /srv/arquivos/empresa/comunicados/comunicado-001.txt
+│   ├── [drwxrws--T root     auditoria]  /srv/arquivos/empresa/ouvidoria
+│   └── [drwxrws--- root     orion   ]  /srv/arquivos/empresa/politicas
+│       └── [-rw-rw---- root     orion   ]  /srv/arquivos/empresa/politicas/politica-seguranca.txt
+├── [drwxr-s--- root     auditoria]  /srv/arquivos/grupos
+│   ├── [drwxrws--- root     auditoria]  /srv/arquivos/grupos/auditoria
+│   ├── [drwxrws--- root     bkpadm  ]  /srv/arquivos/grupos/bkpadm
+│   ├── [drwxrws--- root     monitoramento]  /srv/arquivos/grupos/monitoramento
+│   │   └── [drwxrws--- root     monitoramento]  /srv/arquivos/grupos/monitoramento/metricas
+│   │       └── [-rw-rw---- root     monitoramento]  /srv/arquivos/grupos/monitoramento/metricas/alertas.log
+│   ├── [drwxrws--- root     redteam ]  /srv/arquivos/grupos/redteam
+│   │   └── [drwxrws--- root     redteam ]  /srv/arquivos/grupos/redteam/ferramentas
+│   │       ├── [-rwxrwx--- cmendes  redteam ]  /srv/arquivos/grupos/redteam/ferramentas/coleta-info.sh
+│   │       └── [-rwxrwx--- cmendes  redteam ]  /srv/arquivos/grupos/redteam/ferramentas/varredura-portas.sh
+│   └── [drwxrws--- root     soc     ]  /srv/arquivos/grupos/soc
+│       └── [drwxrws--- root     soc     ]  /srv/arquivos/grupos/soc/incidentes
+│           └── [-rw-rw---- blima    soc     ]  /srv/arquivos/grupos/soc/incidentes/INC-2026-001.txt
+├── [drwxr-x--- root     orion   ]  /srv/arquivos/individual
+│   ├── [drwxr-x--- asouza   asouza  ]  /srv/arquivos/individual/asouza
+│   ├── [drwxr-x--- blima    blima   ]  /srv/arquivos/individual/blima
+│   ├── [drwxr-x--- cmendes  cmendes ]  /srv/arquivos/individual/cmendes
+│   ├── [drwxr-x--- drocha   drocha  ]  /srv/arquivos/individual/drocha
+│   ├── [drwxr-x--- eprado   eprado  ]  /srv/arquivos/individual/eprado
+│   └── [drwxr-x--- fnunes   fnunes  ]  /srv/arquivos/individual/fnunes
+├── [-rw-r--r-- root     root    ]  /srv/arquivos/LEIA-ME.txt
+└── [drwxr-xr-x root     root    ]  /srv/arquivos/publico
+    ├── [drwxrwxr-x root     root    ]  /srv/arquivos/publico/downloads
+    │   └── [-rw-rw-r-- drocha   drocha  ]  /srv/arquivos/publico/downloads/manual-vpn.txt
+    └── [drwxrwxrwt root     root    ]  /srv/arquivos/publico/troca
+
+drwxr-xr-x+ 7 root    root          4096 nov  3 09:54 /srv/arquivos
+drwxrws---+ 2 root    bkpadm        4096 nov  3 09:54 /srv/arquivos/backup
+drwxr-s---+ 5 root    orion         4096 nov  3 09:54 /srv/arquivos/empresa
+drwxrws---+ 2 root    soc           4096 nov  3 09:54 /srv/arquivos/empresa/comunicados
+-rw-rw----+ 1 asouza  soc             63 nov  3 09:54 /srv/arquivos/empresa/comunicados/comunicado-001.txt
+drwxrws--T+ 2 root    auditoria     4096 nov  3 09:54 /srv/arquivos/empresa/ouvidoria
+drwxrws---+ 2 root    orion         4096 nov  3 09:54 /srv/arquivos/empresa/politicas
+-rw-rw----+ 1 root    orion          334 nov  3 09:54 /srv/arquivos/empresa/politicas/politica-seguranca.txt
+drwxr-s---+ 7 root    auditoria     4096 nov  3 09:54 /srv/arquivos/grupos
+drwxrws---+ 2 root    auditoria     4096 nov  3 09:54 /srv/arquivos/grupos/auditoria
+drwxrws---+ 2 root    bkpadm        4096 nov  3 09:54 /srv/arquivos/grupos/bkpadm
+drwxrws---+ 3 root    monitoramento 4096 nov  3 09:54 /srv/arquivos/grupos/monitoramento
+drwxrws---+ 2 root    monitoramento 4096 nov  3 09:54 /srv/arquivos/grupos/monitoramento/metricas
+-rw-rw----+ 1 root    monitoramento   47 nov  3 09:54 /srv/arquivos/grupos/monitoramento/metricas/alertas.log
+drwxrws---+ 3 root    redteam       4096 nov  3 09:54 /srv/arquivos/grupos/redteam
+drwxrws---+ 2 root    redteam       4096 nov  3 09:54 /srv/arquivos/grupos/redteam/ferramentas
+-rwxrwx---+ 1 cmendes redteam        135 nov  3 09:54 /srv/arquivos/grupos/redteam/ferramentas/coleta-info.sh
+-rwxrwx---+ 1 cmendes redteam        251 nov  3 09:54 /srv/arquivos/grupos/redteam/ferramentas/varredura-portas.sh
+drwxrws---+ 3 root    soc           4096 nov  3 09:54 /srv/arquivos/grupos/soc
+drwxrws---+ 2 root    soc           4096 nov  3 09:54 /srv/arquivos/grupos/soc/incidentes
+-rw-rw----+ 1 blima   soc             63 nov  3 09:54 /srv/arquivos/grupos/soc/incidentes/INC-2026-001.txt
+drwxr-x---+ 8 root    orion         4096 nov  3 09:54 /srv/arquivos/individual
+drwxr-x---+ 2 asouza  asouza        4096 nov  3 09:54 /srv/arquivos/individual/asouza
+drwxr-x---+ 2 blima   blima         4096 nov  3 09:54 /srv/arquivos/individual/blima
+drwxr-x---+ 2 cmendes cmendes       4096 nov  3 09:54 /srv/arquivos/individual/cmendes
+drwxr-x---+ 2 drocha  drocha        4096 nov  3 09:54 /srv/arquivos/individual/drocha
+drwxr-x---+ 2 eprado  eprado        4096 nov  3 09:54 /srv/arquivos/individual/eprado
+drwxr-x---+ 2 fnunes  fnunes        4096 nov  3 09:54 /srv/arquivos/individual/fnunes
+-rw-r--r--+ 1 root    root           149 nov  3 09:54 /srv/arquivos/LEIA-ME.txt
+drwxr-xr-x+ 4 root    root          4096 nov  3 09:54 /srv/arquivos/publico
+drwxrwxr-x+ 2 root    root          4096 nov  3 09:54 /srv/arquivos/publico/downloads
+-rw-rw-r--+ 1 drocha  drocha          33 nov  3 09:54 /srv/arquivos/publico/downloads/manual-vpn.txt
+drwxrwxrwt+ 2 root    root          4096 nov  3 09:54 /srv/arquivos/publico/troca
+
+Modo octal:
+755 drwxr-xr-x root:root /srv/arquivos
+2770 drwxrws--- root:bkpadm /srv/arquivos/backup
+2750 drwxr-s--- root:orion /srv/arquivos/empresa
+2770 drwxrws--- root:soc /srv/arquivos/empresa/comunicados
+660 -rw-rw---- asouza:soc /srv/arquivos/empresa/comunicados/comunicado-001.txt
+3770 drwxrws--T root:auditoria /srv/arquivos/empresa/ouvidoria
+2770 drwxrws--- root:orion /srv/arquivos/empresa/politicas
+660 -rw-rw---- root:orion /srv/arquivos/empresa/politicas/politica-seguranca.txt
+2750 drwxr-s--- root:auditoria /srv/arquivos/grupos
+2770 drwxrws--- root:auditoria /srv/arquivos/grupos/auditoria
+2770 drwxrws--- root:bkpadm /srv/arquivos/grupos/bkpadm
+2770 drwxrws--- root:monitoramento /srv/arquivos/grupos/monitoramento
+2770 drwxrws--- root:monitoramento /srv/arquivos/grupos/monitoramento/metricas
+660 -rw-rw---- root:monitoramento /srv/arquivos/grupos/monitoramento/metricas/alertas.log
+2770 drwxrws--- root:redteam /srv/arquivos/grupos/redteam
+2770 drwxrws--- root:redteam /srv/arquivos/grupos/redteam/ferramentas
+770 -rwxrwx--- cmendes:redteam /srv/arquivos/grupos/redteam/ferramentas/coleta-info.sh
+770 -rwxrwx--- cmendes:redteam /srv/arquivos/grupos/redteam/ferramentas/varredura-portas.sh
+2770 drwxrws--- root:soc /srv/arquivos/grupos/soc
+2770 drwxrws--- root:soc /srv/arquivos/grupos/soc/incidentes
+660 -rw-rw---- blima:soc /srv/arquivos/grupos/soc/incidentes/INC-2026-001.txt
+750 drwxr-x--- root:orion /srv/arquivos/individual
+750 drwxr-x--- asouza:asouza /srv/arquivos/individual/asouza
+750 drwxr-x--- blima:blima /srv/arquivos/individual/blima
+750 drwxr-x--- cmendes:cmendes /srv/arquivos/individual/cmendes
+750 drwxr-x--- drocha:drocha /srv/arquivos/individual/drocha
+750 drwxr-x--- eprado:eprado /srv/arquivos/individual/eprado
+750 drwxr-x--- fnunes:fnunes /srv/arquivos/individual/fnunes
+644 -rw-r--r-- root:root /srv/arquivos/LEIA-ME.txt
+755 drwxr-xr-x root:root /srv/arquivos/publico
+775 drwxrwxr-x root:root /srv/arquivos/publico/downloads
+664 -rw-rw-r-- drocha:drocha /srv/arquivos/publico/downloads/manual-vpn.txt
+1777 drwxrwxrwt root:root /srv/arquivos/publico/troca

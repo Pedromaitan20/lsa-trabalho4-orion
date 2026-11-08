@@ -1,0 +1,475 @@
+# file: /srv/arquivos
+# owner: root
+# group: root
+user::rwx
+user:svc-backup:r-x
+group::r-x
+mask::r-x
+other::r-x
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::r-x
+
+# file: /srv/arquivos/backup
+# owner: root
+# group: bkpadm
+# flags: -s-
+user::rwx
+user:svc-backup:rwx
+group::r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:rwx
+default:group::r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/individual
+# owner: root
+# group: orion
+user::rwx
+user:svc-backup:r-x
+group::--x
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::--x
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/blima
+# owner: blima
+# group: blima
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/cmendes
+# owner: cmendes
+# group: cmendes
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/drocha
+# owner: drocha
+# group: drocha
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/asouza
+# owner: asouza
+# group: asouza
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/fnunes
+# owner: fnunes
+# group: fnunes
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/individual/eprado
+# owner: eprado
+# group: eprado
+user::rwx
+user:svc-backup:r-x
+group::---
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::---
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/publico
+# owner: root
+# group: root
+user::rwx
+user:svc-backup:r-x
+group::r-x
+mask::r-x
+other::r-x
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::r-x
+
+# file: /srv/arquivos/publico/troca
+# owner: root
+# group: root
+# flags: --t
+user::rwx
+user:svc-backup:r-x
+group::rwx
+mask::rwx
+other::rwx
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::r-x
+
+# file: /srv/arquivos/publico/downloads
+# owner: root
+# group: root
+user::rwx
+user:svc-backup:r-x
+user:drocha:rwx
+group::r-x
+mask::rwx
+other::r-x
+default:user::rwx
+default:user:svc-backup:r-x
+default:user:drocha:rwx
+default:group::r-x
+default:mask::rwx
+default:other::r-x
+
+# file: /srv/arquivos/publico/downloads/manual-vpn.txt
+# owner: drocha
+# group: drocha
+user::rw-
+user:svc-backup:r-x	#effective:r--
+user:drocha:rwx	#effective:rw-
+group::r-x	#effective:r--
+mask::rw-
+other::r--
+
+# file: /srv/arquivos/empresa
+# owner: root
+# group: orion
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::r-x
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/empresa/ouvidoria
+# owner: root
+# group: auditoria
+# flags: -st
+user::rwx
+user:svc-backup:r-x
+group::r-x
+group:orion:-wx
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/empresa/politicas
+# owner: root
+# group: orion
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+user:drocha:rwx
+group::r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:user:drocha:rwx
+default:group::r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/empresa/politicas/politica-seguranca.txt
+# owner: root
+# group: orion
+user::rw-
+user:svc-backup:r--
+user:drocha:rw-
+group::r--
+mask::rw-
+other::---
+
+# file: /srv/arquivos/empresa/comunicados
+# owner: root
+# group: soc
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:orion:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:orion:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/empresa/comunicados/comunicado-001.txt
+# owner: asouza
+# group: soc
+user::rw-
+user:svc-backup:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:orion:r-x	#effective:r--
+mask::rw-
+other::---
+
+# file: /srv/arquivos/LEIA-ME.txt
+# owner: root
+# group: root
+user::rw-
+user:svc-backup:r-x	#effective:r--
+group::r-x	#effective:r--
+mask::r--
+other::r--
+
+# file: /srv/arquivos/grupos
+# owner: root
+# group: auditoria
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::r-x
+group:monitoramento:--x
+group:orion:--x
+mask::r-x
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::r-x
+default:mask::r-x
+default:other::---
+
+# file: /srv/arquivos/grupos/redteam
+# owner: root
+# group: redteam
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/redteam/ferramentas
+# owner: root
+# group: redteam
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+user:fnunes:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:user:fnunes:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/redteam/ferramentas/coleta-info.sh
+# owner: cmendes
+# group: redteam
+user::rwx
+user:svc-backup:r-x
+user:fnunes:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+
+# file: /srv/arquivos/grupos/redteam/ferramentas/varredura-portas.sh
+# owner: cmendes
+# group: redteam
+user::rwx
+user:svc-backup:r-x
+user:fnunes:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+
+# file: /srv/arquivos/grupos/soc
+# owner: root
+# group: soc
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/soc/incidentes
+# owner: root
+# group: soc
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+user:asouza:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:user:asouza:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/soc/incidentes/INC-2026-001.txt
+# owner: blima
+# group: soc
+user::rw-
+user:svc-backup:r-x	#effective:r--
+user:asouza:r-x	#effective:r--
+group::rwx	#effective:rw-
+group:auditoria:r-x	#effective:r--
+mask::rw-
+other::---
+
+# file: /srv/arquivos/grupos/auditoria
+# owner: root
+# group: auditoria
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/bkpadm
+# owner: root
+# group: bkpadm
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/monitoramento
+# owner: root
+# group: monitoramento
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/monitoramento/metricas
+# owner: root
+# group: monitoramento
+# flags: -s-
+user::rwx
+user:svc-backup:r-x
+group::rwx
+group:auditoria:r-x
+mask::rwx
+other::---
+default:user::rwx
+default:user:svc-backup:r-x
+default:group::rwx
+default:group:auditoria:r-x
+default:mask::rwx
+default:other::---
+
+# file: /srv/arquivos/grupos/monitoramento/metricas/alertas.log
+# owner: root
+# group: monitoramento
+user::rw-
+user:svc-backup:r--
+user:blima:r--
+group::rw-
+group:auditoria:r--
+mask::rw-
+other::---
+

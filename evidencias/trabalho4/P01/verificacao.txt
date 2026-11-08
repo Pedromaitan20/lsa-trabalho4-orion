@@ -1,0 +1,11 @@
+lsa-rm574960
+
+orion:x:1012:asouza,blima,cmendes,drocha,eprado,fnunes
+uid=1001(asouza) gid=1006(asouza) grupos=1006(asouza),1001(soc),1012(orion)
+uid=1002(blima) gid=1007(blima) grupos=1007(blima),1001(soc),1005(monitoramento),1012(orion)
+uid=1003(cmendes) gid=1008(cmendes) grupos=1008(cmendes),1002(redteam),1012(orion)
+uid=1004(drocha) gid=1009(drocha) grupos=1009(drocha),1003(auditoria),1004(bkpadm),1012(orion)
+uid=1005(eprado) gid=1010(eprado) grupos=1010(eprado),1003(auditoria),1012(orion)
+uid=1006(fnunes) gid=1011(fnunes) grupos=1011(fnunes),1002(redteam),1012(orion)
+uid=999(svc-backup) gid=989(svc-backup) grupos=989(svc-backup),1004(bkpadm)
+uid=997(svc-monitor) gid=988(svc-monitor) grupos=988(svc-monitor),1005(monitoramento)
